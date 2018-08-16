@@ -8,7 +8,7 @@ elsif array.length == 3
 else 
   message = ""
   array.each_with_index do |value,index|
-    message+= index+1 < array.length-1 ? "#{value}," : "and #{value}"
+    message+= index < array.length-1 ? " #{value}," : " and #{value}"
   end
   message
 end
